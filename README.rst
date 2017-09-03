@@ -1,14 +1,20 @@
 ======================
-Cookiecutter PyPackage
+Cookiecutter Python Package with C++ 
 ======================
 
 .. image:: https://pyup.io/repos/github/audreyr/cookiecutter-pypackage/shield.svg
      :target: https://pyup.io/repos/github/audreyr/cookiecutter-pypackage/
      :alt: Updates
 
-Cookiecutter_ template for a Python package.
+Cookiecutter_ template for a Python package with C++ extension.
 
-* GitHub repo: https://github.com/audreyr/cookiecutter-pypackage/
+Let's say you want to create a new Python Package, and you have a really good reason to write part of your code in C++. Furthermore, you want to use the Python/C API to accomplish this task (Extend Python with C++ code).
+  
+You can use this cookiecutter template to help you setup a scaffolding for your project that optionally includes Google Test framework and Visual Studio 2017 solution files. GTest and VS 2017 become very useful if you a large existing C/C++ project or if you need to do lots of mixed code debugging. 
+
+
+
+* GitHub repo: https://github.com/dewnull/cookiecutter-pypackage-cpp/
 * Documentation: https://cookiecutter-pypackage.readthedocs.io/
 * Free software: BSD license
 
@@ -17,11 +23,13 @@ Features
 
 * Testing setup with ``unittest`` and ``python setup.py test`` or ``py.test``
 * Travis-CI_: Ready for Travis Continuous Integration testing
-* Tox_ testing: Setup to easily test for Python 2.6, 2.7, 3.3, 3.4, 3.5
+* Tox_ testing: Setup to easily test for Python 3.3, 3.4, 3.5
 * Sphinx_ docs: Documentation ready for generation with, for example, ReadTheDocs_
 * Bumpversion_: Pre-configured version bumping with a single command
 * Auto-release to PyPI_ when you push a new tag to master (optional)
 * Command line interface using Click (optional)
+* Google Test Framework
+* Visual Studio 2017 integration
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 
@@ -50,7 +58,7 @@ Cookiecutter 1.4.0 or higher)::
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git
+    cookiecutter https://github.com/dewnull/cookiecutter-pypackage-cpp.git
 
 Then:
 
